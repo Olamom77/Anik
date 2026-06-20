@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %}Home – Anik Tech School{% endblock %}
+{% block content %}
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-text">
+    <span class="tag">Est. 2010 · Abuja, Nigeria</span>
+    <h1>Shaping tomorrow's tech leaders</h1>
+    <p>Anik Tech School offers world-class programs in engineering, data science, cybersecurity, and beyond — built for the next generation of innovators.</p>
+    <div class="hero-btns">
+      <a href="/programs" class="btn-primary">Explore Programs</a>
+      <a href="/contact" class="btn-secondary">Book a Campus Tour</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-card"><div class="stat-num">4,200+</div><div class="stat-label">Students Enrolled</div></div>
+    <div class="stat-card"><div class="stat-num">96%</div><div class="stat-label">Graduate Employment</div></div>
+    <div class="stat-card"><div class="stat-num">38</div><div class="stat-label">Programs Offered</div></div>
+    <div class="stat-card"><div class="stat-num">180+</div><div class="stat-label">Industry Partners</div></div>
+  </div>
+</section>
+
+<!-- Campus Snapshot -->
+<section style="padding:3.5rem 0;background:#f9f9f9;border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;">
+  <div style="max-width:960px;margin:0 auto;padding:0 2rem;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:1.5rem;">
+      <div>
+        <div class="section-label">Campus Life</div>
+        <h2 class="section-title" style="margin:0;">A glimpse of Anik Tech</h2>
+      </div>
+      <a href="/gallery" class="btn-secondary" style="font-size:13px;padding:8px 16px;flex-shrink:0;">View Full Gallery →</a>
+    </div>
+    <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:200px 200px;gap:10px;">
+      <div style="grid-row:span 2;border-radius:12px;overflow:hidden;position:relative;">
+        <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=700&q=80" alt="Main Campus" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        <div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,0.55));padding:14px;border-radius:0 0 12px 12px;">
+          <span style="color:#fff;font-size:13px;font-weight:500;">Main Campus · Abuja</span>
+        </div>
+      </div>
+      <div style="border-radius:12px;overflow:hidden;"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&q=80" alt="CS Lab" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"></div>
+      <div style="border-radius:12px;overflow:hidden;"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=500&q=80" alt="Students" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"></div>
+      <div style="border-radius:12px;overflow:hidden;"><img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&q=80" alt="Robotics" style="width:100%;height:100%;object-fit:cover;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'"></div>
+      <div style="border-radius:12px;overflow:hidden;position:relative;">
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500&q=80" alt="Events" style="width:100%;height:100%;object-fit:cover;">
+        <div style="position:absolute;inset:0;background:rgba(24,95,165,0.6);display:flex;align-items:center;justify-content:center;border-radius:12px;">
+          <a href="/gallery" style="color:#fff;font-size:14px;font-weight:500;text-decoration:none;">See all photos →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Programs Preview -->
+<section class="section programs-preview">
+  <div class="section-inner">
+    <div class="section-label">Academic Programs</div>
+    <h2 class="section-title">Find your field</h2>
+    <p class="section-sub">From foundational degrees to cutting-edge specializations.</p>
+    <div class="programs-grid">
+      <div class="program-card"><div class="prog-title">💻 Computer Science</div><p class="prog-desc">Algorithms, systems design, and software engineering fundamentals.</p><span class="prog-tag">BSc · MSc · PhD</span></div>
+      <div class="program-card"><div class="prog-title">📊 Data Science</div><p class="prog-desc">Machine learning, analytics, and AI-driven decision making.</p><span class="prog-tag">BSc · MSc</span></div>
+      <div class="program-card"><div class="prog-title">🔐 Cybersecurity</div><p class="prog-desc">Network security, ethical hacking, and digital forensics.</p><span class="prog-tag">BSc · MSc</span></div>
+      <div class="program-card"><div class="prog-title">📱 Software Engineering</div><p class="prog-desc">Full-stack development, mobile apps, and system architecture.</p><span class="prog-tag">BSc · MSc</span></div>
+    </div>
+    <div style="text-align:center;margin-top:2rem;"><a href="/programs" class="btn-primary">View All Programs</a></div>
+  </div>
+</section>
+
+<!-- Student Life Strip -->
+<section style="padding:3rem 0;border-top:1px solid #e8e8e8;">
+  <div style="max-width:960px;margin:0 auto;padding:0 2rem;">
+    <div class="section-label">Student Life</div>
+    <h2 class="section-title">More than just academics</h2>
+    <p class="section-sub" style="margin-bottom:1.5rem;">Clubs, hackathons, sports, and a vibrant campus community await you.</p>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+      <div style="border-radius:10px;overflow:hidden;aspect-ratio:1;"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&q=80" alt="Student Life" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="border-radius:10px;overflow:hidden;aspect-ratio:1;"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&q=80" alt="Hackathon" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="border-radius:10px;overflow:hidden;aspect-ratio:1;"><img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&q=80" alt="Lounge" style="width:100%;height:100%;object-fit:cover;"></div>
+      <div style="border-radius:10px;overflow:hidden;aspect-ratio:1;"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&q=80" alt="Lecture" style="width:100%;height:100%;object-fit:cover;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="section-inner" style="text-align:center;">
+    <h2>Ready to start your journey?</h2>
+    <p>Applications for the 2026/2027 academic year are now open.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="/admissions" class="btn-white">Apply for Admission</a>
+      <a href="/gallery" style="background:rgba(255,255,255,0.15);color:#fff;font-size:14px;font-weight:500;padding:10px 24px;border-radius:8px;display:inline-block;border:1px solid rgba(255,255,255,0.3);">See Campus Gallery</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
