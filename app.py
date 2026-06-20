@@ -4,21 +4,23 @@ import sqlite3, hashlib, smtplib, os
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 app = Flask(__name__)
-app.secret_key = 'anik-tech-secret-key-2026'
+app.secret_key = 'change-this-secret-key-asap'
 
-# Fix for Render proxy - fixes "Bad Request" error
-app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)   # ← add this line
+# Fix for Render proxy
+app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
 
 DB_PATH = 'anik_tech.db'
 
 # ── Email config ─────────────────────────────────────────
 # Replace with your Gmail address and App Password
-# See README.md for how to generate a Gmail App Password
 MAIL_USERNAME = os.environ.get('MAIL_USERNAME', 'your_email@gmail.com')
 MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', 'your_app_password')
 MAIL_FROM     = f'Anik Tech School <{MAIL_USERNAME}>'
+
+# ... rest of your code stays the same
 
 # ── Database ─────────────────────────────────────────────
 def get_db():
