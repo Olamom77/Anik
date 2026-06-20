@@ -7,8 +7,9 @@ from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = 'anik-tech-secret-key-2026'
-from werkzeug.middleware.proxy_fix import ProxyFix
-app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
+
+# Fix for Render proxy - fixes "Bad Request" error
+app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)   # ← add this line
 
 DB_PATH = 'anik_tech.db'
 
